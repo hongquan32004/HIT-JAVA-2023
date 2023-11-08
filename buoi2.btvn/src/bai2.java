@@ -27,6 +27,7 @@ public class bai2 {
             else{
                 System.out.println(f[r- 1] - f[l-2]);
             }
+            b--;
         }
     }
 }
