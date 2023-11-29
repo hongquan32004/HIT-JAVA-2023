@@ -57,6 +57,7 @@ public class Student extends Person{
         setScore(sc.nextDouble());
     }
     public void xuat(){
-        System.out.print("ID: " + getId()+ "Name: " + getName() + "Age: " + getAge() + "Score: " + getScore() + "Capacity: " + getCapacity());
+        System.out.print("ID: " + getId()+ " ,Name: " + getName() + " ,Age: " + getAge()+ "Score: " + getScore() + " ,Capacity: " + getCapacity());
+        System.out.println();
     }
 }

@@ -18,17 +18,18 @@ public class StudentServiceImpl implements StudentService{
 
     @Override
     public void deleteStudent(int id) {
-        for(int i = 0;i< std.size();i++){
-            if(std.contains(i)){
-                std.remove(std.get(i));
-            }
+        for (Student x:std) {
+            if(x.getId() == id)
+                std.remove(x);
         }
 
     }
 
     @Override
     public void searchStudent(String name) {
+        for(int i = 0;i<std.size();i++){
 
+        }
     }
 
     @Override
