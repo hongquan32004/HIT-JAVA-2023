@@ -1,5 +1,6 @@
 package bai2;
 
+import java.util.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -34,7 +35,13 @@ public class StudentServiceImpl implements StudentService{
 
     @Override
     public void sortedStudent() {
+        for (int i = 0; i < std.size(); i++) {
+            for (int j = 0; j < std.size(); j++) {
+                if(std.get(i).getScore()<std.get(j).getScore())
+                    Collections.swap(std,i,j);
+            }
 
+        }
     }
 
     @Override

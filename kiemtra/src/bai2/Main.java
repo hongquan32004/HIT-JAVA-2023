@@ -29,7 +29,7 @@ public class Main {
 
             }
             else if( chon == 4){
-
+                st.sortedStudent();
             }
             else if(chon == 5){
                 st.showAllStudent();
