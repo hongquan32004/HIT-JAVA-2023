@@ -37,14 +37,13 @@ public class StudentServiceImpl implements StudentService{
     public void sortedStudent() {
         for (int i = 0; i < std.size(); i++) {
             for (int j = 0; j < std.size(); j++) {
-                if(std.get(i).getScore()<std.get(j).getScore())
+                if(std.get(i).getScore()>std.get(j).getScore())
                     Collections.swap(std,i,j);
             }
 
         }
     }
 
-    @Override
     public void showAllStudent() {
         for(Student s: std){
             s.xuat();

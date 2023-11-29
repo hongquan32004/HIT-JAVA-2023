@@ -56,8 +56,10 @@ public class Student extends Person{
         System.out.print("Nhập số điểm của sinh viên: ");
         setScore(sc.nextDouble());
     }
+    @Override
     public void xuat(){
-        System.out.print("ID: " + getId()+ " ,Name: " + getName() + " ,Age: " + getAge()+ "Score: " + getScore() + " ,Capacity: " + getCapacity());
+        super.xuat();
+        System.out.print(" ,score: " + getScore() + " ,capacity: " + getCapacity());
         System.out.println();
     }
 }

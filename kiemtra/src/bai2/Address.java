@@ -45,6 +45,6 @@ public class Address {
                 '}';
     }
     public void xuat(){
-        toString();
+        System.out.print(" ,district: " + getDistrict() + " ,city: " + getCity());
     }
 }

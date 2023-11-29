@@ -3,7 +3,7 @@ package bai2;
 import java.util.Scanner;
 
 public abstract class Person {
-    public static int count = 0;
+    public static int count = 1;
 
     private int id;
     private String name;
@@ -77,4 +77,8 @@ public abstract class Person {
         System.out.print("<=======Nhập địa chỉ của sinh viên=====>");
         address.nhap();
     };
+    public void xuat(){
+        System.out.print("ID: " + getId()+ " ,Name: " + getName() + " ,Age: " + getAge());
+        address.xuat();
+    }
 }
